@@ -50,7 +50,7 @@ class StudentMain extends React.Component{
                     Ola, Luiz
                 </p>
                 <p className="CentralText">
-                    Voce pode fazer upload em <a className="YellowText">.doc</a> ou <a className="YellowText">.docx</a> da sua redacao. <br/>Vamos La? =]
+                    Voce pode fazer upload em <a href="/" className="YellowText">.doc</a> ou <a href="/" className="YellowText">.docx</a> da sua redacao. <br/>Vamos La? =]
                 </p>
                 <Upload {...this.uploaderProps} id="test" component="div"  style={{ display: 'inline-block'}}>
                     <div className="UploadContainer">
@@ -65,7 +65,7 @@ class StudentMain extends React.Component{
     renderSuccess(){
         return (
             <div className="MainContainer">
-                <img src={done}/>
+                <img src={done} alt="Imagem contendo informacao de sucesso e pedindo que vc aguarde ate a correcao ser efetuada"/>
             </div>
         )
     }
@@ -75,6 +75,8 @@ class StudentMain extends React.Component{
                 return this.renderUpload();
             case 'success':
                 return this.renderSuccess();
+            default:
+                return this.renderUpload();
         }
 
     }
