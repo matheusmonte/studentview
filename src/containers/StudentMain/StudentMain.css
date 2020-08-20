@@ -4,20 +4,32 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-
 }
 
 .Greetings{
     font-size: 5rem;
-    color: darkgray;
+    color: white;
+    font-weight: bold;
+
 }
 
 .CentralText{
-    color: dimgray;
+    color: white;
     font-size: 1.5rem;
 }
 
-.ButtonStyle{
-    border: none;
+.YellowText{
+    color:yellow;
+}
 
+.UploadContainer {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.UploadButton{
+    border: none;
+    background: yellow;
+    height: 3rem;
 }
